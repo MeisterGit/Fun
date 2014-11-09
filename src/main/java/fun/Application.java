@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan
+@ComponentScan("controllers") // Scan here to find further components. If left blank, only the current package is scanned.
 @EnableAutoConfiguration
 public class Application {
 
